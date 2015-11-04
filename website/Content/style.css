@@ -1,0 +1,277 @@
+﻿html { 
+font-size: 62.5%; /*to make rem corespond to px eg 1.2rem=12px*/
+box-sizing: border-box; /*render boxes (divs) with apdding and border inside set witdh and height, this means you not longer need to adjust eg width when you make the border thicker. Support eg IE8 and IE9*/
+}
+*, *:before, *:after {
+  box-sizing: inherit; /*from https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+}
+
+body { 
+color: #fff;
+background-color: #000;
+font-family: 'Open Sans', verdana, arial, sans-serif; 
+font-size-adjust: 0.535; /*Making sure the otherfonts after Droid Sans (first font), get same size using x-height, see: http://www.brunildo.org/test/aspect-table.html*/
+word-wrap: break-word; /*dont let text span outside divs when very long words eg urls*/
+font-size: 2rem;
+position: relative;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+header h2{
+    text-align: center;
+    vertical-align: central;
+    margin-top: 10px;
+    color: #000;
+}
+
+nav a{
+    color: #000;
+}
+
+nav ul{
+    text-align: center;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 1);
+    background: -webkit-linear-gradient(top, rgba(61, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(61, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-width: 2px;
+    border-radius: 1px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(204, 73, 73, 1);
+    background: -webkit-linear-gradient(top, rgba(117, 38, 38, 1) 0%, rgba(204, 73, 73, 1) 100%);
+    background: linear-gradient(to bottom, rgba(117, 38, 38, 1) 0%, rgba(204, 73, 73, 1) 100%);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(3, 3, 3, 1);
+    background-color: rgba(204, 102, 102, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(36, 31, 31, 1);
+    background-color: rgba(204, 49, 49, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #cc3131;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #cc3131;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #cc3131;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #000000;
+}
+
+.navbar-default{
+    border-color: #000;
+}
+
+main{
+    margin: 0 auto;
+    font-family: 'Lobster', cursive;
+}
+
+.mainContent{
+    
+}
+  
+a:active, a:hover {
+    text-decoration: none;
+}
+
+
+
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.jumbotron{
+    padding-top: 200px;
+    background-image: url(/Img/rock.png);
+    width: 100%;
+}
+
+.jumbotron p{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#quote{
+    width: 50vh;
+}
+#quote .tiny{
+    font-size: 12px;
+    float: right;
+}
+
+#Home, #About, #Contact{
+    padding-top: 30px;
+}
+
+.thumbnail-container{
+ display: none;
+}
+
+a {
+outline: none; /*removes dotted line around links*/
+}
+
+img {
+border: none; /*removes default line around images*/
+}
+
+.justify{
+text-align: justify;
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto; /*for better jusifying*/
+}
+
+/*Classes for filters*/
+.grayscale{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+#thumbnail{
+    
+}
+
+
+    #Contact img{
+        max-width: 171px;
+        height: 150px;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #Contact{
+      
+    }
+
+/*Inside this is big screen*/
+@media (min-width: 769px){ 
+
+
+    .mainContent{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .fixed-attachment {
+        background-attachment: fixed;
+    }
+    
+    .jumbotron{
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        color: floralwhite;
+    }
+
+    #Home , #About, #Contact{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        overflow: hidden;
+    }
+
+    #aboutText{
+        float: none;
+    }
+    
+    .thumbnail-container{
+        display: inline;
+        max-width: 100%;
+       
+       margin-left: 150px;
+    }
+
+    #imgContent{
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        width: 110px;
+        height: 120px;
+    }
+
+    #Contact{
+        height: 90vh;
+        padding-bottom: 70px;
+    }
+
+
+    #contactContent{
+        border: 1px solid rgba(204, 73, 73, 1);
+        height: 80vh;
+        margin-top: 15px;
+    }
+
+    #contactBtn{
+        width: 200px;
+        height: 80px;
+        background-color: black;
+        color: white;
+        -webkit-border-radius: 50px;
+        border: 5px solid white;
+        padding: 5px;
+        margin-left: 447px;
+        margin-top: 200px;
+    }
+
+    #contactBtn:hover{
+        border-color:  rgba(204, 73, 73, 1);
+    }
+
+    #contacts{
+        display: none;
+    }
+
+    #email{
+        width: 60vh;
+        font-size: 1.5em;
+    }
+    
+    #phonenumber{
+        width: 50vh;
+        font-size: 1.5em;
+        margin-top: 200px;
+    } 
+
+ 
+}
+
+footer {
+    color: black;
+    clear: left;
+    text-align: center;
+    padding: 12px;
+}
+
+
+

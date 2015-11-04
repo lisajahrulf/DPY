@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+
+<main>
+    <div id="brand"></div>
+
+    <div class="jumbotron grayscale">
+        <div class="container">
+            <article id="quote">
+                <p>&ldquo;Att lära sig saker handlar om att plötsligt förstå något man alltid förstått, men på ett nytt sätt.&rdquo;</p>
+                <p class="tiny">-Doris Lessing</p>
+            </article>
+        </div>
+    </div>
+
+
+    
+        <section id="Home" class="mainContent">
+            <div class="col-md-9">
+                <article>
+                    <h2>Hem</h2>
+                    <p>Lisa heter jag, bosatt i Nyköping.</p>
+                    <p>Just nu studerar jag en tvåårig utbildning i Stockholm, Systemutvecklare - agil webbprogrammering.</p>
+                    <p>När jag är klar kommer jag att kunna arbeta som webbutvecklare eller frontend-utvecklare. Under utbildningen har vi lärt oss många olika frontend-språk, och det är även där min styrka ligger.</p>
+                    <p>
+                        Då jag är lite av en rookie på programmering och inte kommer från nåt specifikt språk från början
+                        är jag inte heller låst till just ett eller två språk som jag helst vill jobba med, utan jag vill arbeta med många olika och lära mig så mycket som möjligt på vägen.
+                    </p>
+                    <p>I framtiden ska jag vara en fullstack.</p>
+                    <br />
+                </article>
+            </div>
+        </section>
+
+        <section id="firstSection">
+            <div class="row">
+                <div class="fill-screen fixed-attachment grayscale" style="background-image: url('/Img/wallpaper-955988_1280.jpg')"></div>
+            </div>
+        </section>
+
+        <section id="About">
+            <div id="aboutText" class="col-md-9 mainContent">
+                <article>
+                    <h2>Om mig</h2>
+                        <p>Front-end är där jag känner mig mest bekväm och det faller mest naturligt för mig att arbeta här,</p>
+                    <p>men att lära mig mer back-end är ett personligt mål jag satt upp.</p>
+                    <p>På min github kan ni hitta lite av de arbeten jag gjort under min skolgång hittils.</p>
+                    <p>Här under ser ni lite av vad som finns i min kunskapsbank.</p>
+                    <br />
+                </article>
+            </div>
+
+
+            <div class="thumbnail-container col-lg-10 mainContent" ng-controller="AboutController" >
+                    
+                <div ng-repeat="skill in skills">
+                        <div id="thumbnail" class="col-sm-2">
+                            <img id="imgContent" ng-src="{{skill.imgSrc}}" >
+                        </div>
+                    
+                    </div>
+
+            </div>
+        
+            </section>
+
+        <section>
+            <div>
+                <div class="fill-screen fixed-attachment grayscale" style="background-image: url('/Img/wallpaper-955988_1280.jpg')"></div>
+            </div>
+        </section>
+
+        <section id="Contact" class="mainContent">
+            
+            <div id="contactContent" class="col-md-12">
+
+        
+                    <button class="col-md-4" id="contactBtn">Kontakt</button>
+              
+                <div id="contacts" class="col-md-12">
+                    <div id="email" class="col-md-8">
+                        <p>lisa.jahrulf@outlook.com</p>
+                    </div>
+                    <div id="phonenumber" class="col-md-4">
+                        <p>070-2345678</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+</main>
